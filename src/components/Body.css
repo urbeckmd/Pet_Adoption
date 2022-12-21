@@ -1,0 +1,152 @@
+.body_container {
+    display: flex;
+    margin: 40px auto 0 auto;
+    max-width: 1200px;
+}
+
+.body_leftPane {
+    flex: 0.3;
+}
+
+.adoptionProcessContainer {
+    display: flex;
+    align-items: center;
+    border: solid black 1px;
+    width: fit-content;
+    /* margin: 40px 0; */
+    padding: 0 20px;
+}
+
+.adoptionProcessContainer:hover {
+    background-color: #41230B;
+    color: white;
+    cursor: pointer;
+}
+
+.adoptionProcessText {
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.adoptionOptionList {
+    list-style-type: none;
+    color: var(--red-background-color);
+}
+
+.adoptionOption {
+    display: flex;
+}
+
+.adoptionOption > a {
+    text-decoration: none;
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+.adoptionOption_icon {
+    transform: scale(0.7);
+}
+
+.body_rightPane {
+    flex: 0.7;
+    padding: none;
+}
+
+.rightPane_header {
+    margin-top: -10px;
+}
+
+.rightPane_tools {
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchBarContainer {
+    display: flex;
+    /* border: solid black 1px; */
+    padding: 5px 0px;
+    width: 70%;
+    border-radius: 5px;
+}
+
+.searchbar_icon {
+    background-color: transparent;
+}
+
+.searchBar {
+    border: none;
+    font-size: 1.2rem;
+}
+
+.searchBar:focus {
+    outline: none;
+}
+
+.filter_button {
+    background-color: transparent;
+    color: var(--red-background-color);
+    border: var(--red-background-color) solid 2px;
+    border-radius: 5px;
+    padding: 4px 10px;
+    font-size: 1.2rem;
+}
+
+.filter_button:hover {
+    background-color: var(--red-background-color);
+    cursor: pointer;
+    color: white;
+}
+
+.cat_picture_grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* margin-top: 70px; */
+    margin: 70px auto 0 auto;
+    max-width: 700px;
+}
+
+
+
+a:link { color: var(--red-background-color); }
+
+
+a:visited { color: var(--red-background-color); }
+
+
+a:hover { color: var(--red-background-color); }
+
+
+a:active { color: var(--red-background-color); }
+
+@media only screen and (max-width: 1500px) {
+    .body_container {
+        margin: 40px var(--margin-sides) 0 var(--margin-sides);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .cat_picture_grid {
+        margin: 70px auto 0 auto;
+    }
+    .body_leftPane {
+        display: none;
+    }
+    .body_rightPane {
+        flex: 1;
+        /* margin: 0 10%; */
+    }
+    .rightPane_header {
+        text-align: center;
+    }
+    .rightPane_tools {
+        margin: 0 10%;
+    }
+}
+
+@media only screen and (max-width: 765px) {
+    .cat_picture_grid {
+        width: 300px;
+        margin: 70px auto;
+    }
+}

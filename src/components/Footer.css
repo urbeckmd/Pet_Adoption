@@ -1,0 +1,33 @@
+.subfooter {
+    background-color: var(--red-background-color);
+    color: white;
+    align-items: center;
+    text-align: center;
+    padding: 5px var(--margin-sides) 20px var(--margin-sides);
+}
+
+.socialMedia_iconsContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20%;
+    /* max-width: 466px; */
+}
+
+.socialMedia_icon {
+    transform: scale(1.3);
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.socialMedia_icon:hover {
+    cursor: pointer;
+    background-color: white;
+    color: var(--red-background-color);
+}
+
+@media only screen and (max-width: 490px) {
+    .socialMedia_icon {
+        border: none;
+    }
+}
